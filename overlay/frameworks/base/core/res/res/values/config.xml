@@ -718,4 +718,7 @@
         <item>org.lineageos.lineageparts.gestures.KeyHandler</item>
         <item>co.aospa.keyhandler.KeyHandler</item>
     </string-array>
+
+    <!-- Whether or not to enable the lock screen entry point for the QR code scanner. -->
+   <bool name="config_enableQrCodeScannerOnLockScreen">true</bool>
 </resources>
