@@ -536,3 +536,7 @@ endif
 # Remove unwanted packages
 PRODUCT_PACKAGES += \
     RemovePackages
+
+# XiaomiParts
+PRODUCT_PACKAGES += \
+    XiaomiParts
