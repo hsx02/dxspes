@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2022 The LineageOS Project
+# Copyright (C) 2022 The AOSP Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -11,18 +11,27 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from spes/spesn device
 $(call inherit-product, device/xiaomi/spes/device.mk)
 
-# Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common AOSP stuff.
+$(call inherit-product, vendor/aosp/config/common.mk)
 
 # Additions
 $(call inherit-product-if-exists, vendor/gapps/config.mk)
 $(call inherit-product-if-exists, vendor/prebuilt-apps/config.mk)
 
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_SUPPORTS_QUICK_TAP := false
+TARGET_INCLUDE_LIVE_WALLPAPERS := false
+TARGET_SUPPORTS_GOOGLE_RECORDER := false
+TARGET_SUPPORTS_CALL_RECORDING := true
+TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
+TARGET_INCLUDE_STOCK_ARCORE := false
+
 # Camera
 $(call inherit-product-if-exists, vendor/miuicamera/config.mk)
 
 # Product Specifics
-PRODUCT_NAME := lineage_spes
+PRODUCT_NAME := aosp_spes
 PRODUCT_DEVICE := spes
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := Redmi Note 11
