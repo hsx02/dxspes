@@ -736,7 +736,6 @@
             <instance>default</instance>
         </interface>
     </hal>
-<<<<<<< HEAD
     <hal format="hidl" optional="true">
         <name>vendor.dolby.hardware.dms</name>
         <version>1.0</version>
@@ -745,14 +744,4 @@
             <instance>default</instance>
         </interface>
     </hal>
-    <hal format="hidl" optional="true">
-        <name>vendor.xiaomi.hardware.micharge</name>
-        <version>1.0</version>
-        <interface>
-            <name>IMiCharge</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-=======
->>>>>>> 8eab241... spes: proprietary: Remove useless micharge HAL
 </compatibility-matrix>
